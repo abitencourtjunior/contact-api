@@ -23,7 +23,7 @@ public class ContactController {
 	}
 	
 	@GetMapping(path = "/{id}")
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public ResponseEntity<Contact> findById(@PathVariable long id){
 		return contactService.findById(id)
 				.map(record -> ResponseEntity.ok().body(record))

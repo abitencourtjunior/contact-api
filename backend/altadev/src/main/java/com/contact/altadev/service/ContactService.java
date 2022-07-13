@@ -3,6 +3,7 @@ package com.contact.altadev.service;
 import com.contact.altadev.model.Contact;
 import com.contact.altadev.repository.ContactRepository;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
